@@ -1,0 +1,58 @@
+body {
+    background-color: red;
+}
+
+#gameScreen {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    background-color:blue;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid black 2px;
+}
+
+#gameCharacter {
+    position: absolute;
+    background-color: turquoise;
+    width: 30px;
+    height: 70px;
+    top: 330px;
+    left: 50px;
+    border: solid black 1px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+#characterImg {
+    width: 30px;
+    height: 70px; 
+}
+
+@keyframes characterJump {
+    0%{top: 330px;}
+    30%{top: 240px;}
+    70%{top: 240px;}
+    100%{bottom: 330px;}
+}
+.animate {
+    animation: characterJump 0.3s linear;
+}
+
+#gameObstical {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 370px;
+    background-color: bisque;
+    right: 0;
+    animation: moveObstical 1.5s linear infinite;
+} 
+
+
+@keyframes moveObstical {
+    0% {right: 0;}
+    50% {right: 50%;}
+    100%{right: 100%;}
+}
