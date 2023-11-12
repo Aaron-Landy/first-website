@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+}
+
+.videoDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#background-video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.webAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: transtionAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
+
+}
+
+/*While i was watching TikTok a video on how to make transtion "between" slides appeared and i thought i might as well add that*/
+@keyframes transtionAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.frame {
+    position: relative;
+    border: 5px solid darkgrey;
+    background-color: darkgreen;
+    height: 600px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-image: url("windowsbackground.jpeg");
+}
+
+
+
+
+.folders{
+    width: 140px;
+    height: 140px;
+    margin-top: 60px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+
+.folderText {
+    position: absolute;
+    border-style: solid;
+    background-color: yellow;
+    width: 140px;
+    height: 300px;
+    overflow: hidden;
+    overflow: scroll;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/*Didnt know how target properly worked so found some websites online to help me*/
+.container:target .folderText {
+    opacity: 1;
+}
+
+#menuList {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
