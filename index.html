@@ -6,41 +6,78 @@
     <title>Kobolds Design</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <style>
+    </style>
   </head>
   <body>
-    <div id="headerDiv">
-      <h4 class="headerTags">Menu</h4>
-      <h4 class="headerTags">Team</h4>
-      <h4 class="headerTags">dinoSquash</h4>
-      <h4 class="headerTags">Contanct</h4>
-      <h4 class="headerTags">Settings</h4>
-    </div>
+    <nav id="navigation-bar">
+      <div class="logo"><h1><a href="index.html">dinoSquash</a></h1></div>
+      <div class="openBar"><i class="fa fa-bars"></i></div>
+        <ul class="navBar">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li id="contact-btn"><a href="#contact-container">Contact</a></li>
+          <div class="closeBar"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook"><a href="https://www.facebook.com/aaron.landy.5/" target="_blank"></a></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </span>
+        </ul>
+      </div>
+    </nav>
+
     <div id="borderBottom"></div>
-    <div id="imgDiv">
-      <img src="images/squach.png" alt="" />
+    
+    <h1 id="animated-title">
+      <span>W</span>
+      <span>e</span>
+      <span>l</span>
+      <span>c</span>
+      <span>o</span>
+      <span>m</span>
+      <span>e</span>
+      <span>.</span>
+      <span>.</span>
+      <span>.</span>
+    </h1>
+
+    <div id="snapshot-main-div">
+      <div class="snapshot-div">
+        <img src="images/DSC04792.jpeg" class="snapshot-image">
+        <div class="snapshot-container"><p>Photo by <a href="https://www.facebook.com/profile.php?id=100095376752869" target="_blank"><u>Joseph Conway</u></a></p></div>
+      </div>
+      <div class="snapshot-div">
+        <img src="images/DSC05261.jpeg" class="snapshot-image">
+        <div class="snapshot-container"><p>Photo by <a href="https://www.facebook.com/profile.php?id=100095376752869" target="_blank"><u>Joseph Conway</u></a></p></div>
+      </div>
+      <div class="snapshot-div">
+        <img src="images/DSC05852.jpeg" class="snapshot-image">
+        <div class="snapshot-container"><p>Photo by <a href="https://www.facebook.com/profile.php?id=100095376752869" target="_blank"><u>Joseph Conway</u></a></p></div>
+      </div>
     </div>
-    <div id="tableOfContents">
-      <div id="tableOfContentsDiv">
-        <h3>Table of Contents</h3>
-      </div>
-      <div id="projectsDiv">
-        <ul>
-          <h4>Projects:</h4>
-          <li><a href="exam/exam.html">Website Idea #1</a></li>
-          <li><a href="Arbeidskrav/intro.html">Website Idea #2</a></li>
-          <li><a href="">Website Idea #3</a></li>
-          <li><a href="fd.html">Happy Father's Day</a></li>
-        </ul>
-      </div>
-      <div id="gamesDiv">
-        <ul>
-          <h4>Games:</h4>
-          <li><a href="">Game #1</a></li>
-          <li><a href="">Game #2</a></li>
-          <li><a href="">Game #3</a></li>
-          <li><a href="">Game #4</a></li>
-        </ul>
+
+    <div id="contact-container">
+      <div id="contact-text">
+        <h1>Contact Us</h1>
+        <h4>Email: <a href=mailto: koboldsdesign@gmail.com? subject="subject text">koboldsdesign@gamil.com</a></h4>
+        <div id="icon-div">
+          <span id="icons-contact">
+            <a href="https://www.facebook.com/aaron.landy.5/" target="_blank" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/aaron-landy-697a4629b/" target="_blank" class="fab fa-linkedin"></a>
+          </span>
+        </div>
       </div>
     </div>
+    
+    <script src="index.js"></script>
   </body>
 </html>
