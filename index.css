@@ -12,8 +12,8 @@ body {
     }
 
   /*nav bar*/
-    .logo {
-        font-size: 27px;
+    .logo a {
+        font-size: 35px;
         text-decoration: none;
 
     }
